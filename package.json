@@ -4,12 +4,17 @@
   "description": "mc bot",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node src/index.js"
   },
   "author": "shorent",
   "license": "ISC",
   "dependencies": {
     "mineflayer": "^4.10.1",
-    "mineflayer-navigate": "^0.0.10"
+    "mineflayer-auto-eat": "^3.3.6",
+    "mineflayer-navigate": "^0.0.10",
+    "mineflayer-pathfinder": "^2.4.4",
+    "prismarine-block": "^1.17.0",
+    "prismarine-item": "^1.14.0",
+    "prismarine-registry": "^1.7.0"
   }
 }
