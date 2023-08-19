@@ -1,6 +1,7 @@
 {
   "name": "mineflayer",
-  "version": "1.0.0",
+  "version": "2.0.0",
+  "type": "module",
   "description": "mc bot",
   "main": "index.js",
   "scripts": {
@@ -9,6 +10,7 @@
   "author": "shorent",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.3.1",
     "mineflayer": "^4.10.1",
     "mineflayer-auto-eat": "^3.3.6",
     "mineflayer-navigate": "^0.0.10",
@@ -16,5 +18,8 @@
     "prismarine-block": "^1.17.0",
     "prismarine-item": "^1.14.0",
     "prismarine-registry": "^1.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.1"
   }
 }
