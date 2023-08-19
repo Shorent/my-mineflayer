@@ -1,5 +1,6 @@
 import dotenv from 'dotenv';
 import mineflayer from 'mineflayer';
+import { executeCommand } from './modules/commands.js';
 
 dotenv.config();
 
@@ -13,6 +14,7 @@ const bot = mineflayer.createBot({
 bot.on('chat', (username, message) => {
     if (username === bot.username) return;
     console.log(username, message);
+    executeCommand(bot, username, message);
 });
 
 bot.once('spawn', () => {
